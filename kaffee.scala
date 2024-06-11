@@ -6,7 +6,7 @@ class Kaffeautomat(private val preis :Int):
 
   def einwerfen(muenze: Int): Unit =
     if (muenze == 1 || muenze == 2 || muenze == 5) then
-        this.summe += muenze // sekundaere konstruktor 
+        this.summe += muenze // sekundaere konstruktor: in the body of the class implementiert
         println(this.summe)
     else
         println("Falsche Muenze")
